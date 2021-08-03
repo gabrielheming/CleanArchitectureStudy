@@ -2,7 +2,7 @@ using System;
 using System.Threading.Tasks;
 using GloboTicket.TicketManagement.Domain.Entities;
 
-namespace GloboTicket.TicketManagement.Application.Contracts
+namespace GloboTicket.TicketManagement.Application.Contracts.Persistence
 {
     public interface IEventRepository : IAsyncRepository<Event>
     {
