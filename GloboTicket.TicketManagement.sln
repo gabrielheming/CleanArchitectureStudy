@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GloboTicket.TicketManagemen
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GloboTicket.TicketManagement.Application", "src\Core\GloboTicket.TicketManagement.Application\GloboTicket.TicketManagement.Application.csproj", "{4FB6B68F-10DB-4078-A786-57D3F2102C22}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{150CC3F0-C7E9-46FF-B866-77810AE9E3F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GloboTicket.TicketManagement.Persistence", "src\Infrastructure\GloboTicket.TicketManagement.Persistence\GloboTicket.TicketManagement.Persistence.csproj", "{FDA4A473-8CE0-4F2B-BEE3-20F1E5D4DEE2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,10 +52,24 @@ Global
 		{4FB6B68F-10DB-4078-A786-57D3F2102C22}.Release|x64.Build.0 = Release|Any CPU
 		{4FB6B68F-10DB-4078-A786-57D3F2102C22}.Release|x86.ActiveCfg = Release|Any CPU
 		{4FB6B68F-10DB-4078-A786-57D3F2102C22}.Release|x86.Build.0 = Release|Any CPU
+		{FDA4A473-8CE0-4F2B-BEE3-20F1E5D4DEE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDA4A473-8CE0-4F2B-BEE3-20F1E5D4DEE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDA4A473-8CE0-4F2B-BEE3-20F1E5D4DEE2}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{FDA4A473-8CE0-4F2B-BEE3-20F1E5D4DEE2}.Debug|x64.Build.0 = Debug|Any CPU
+		{FDA4A473-8CE0-4F2B-BEE3-20F1E5D4DEE2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FDA4A473-8CE0-4F2B-BEE3-20F1E5D4DEE2}.Debug|x86.Build.0 = Debug|Any CPU
+		{FDA4A473-8CE0-4F2B-BEE3-20F1E5D4DEE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDA4A473-8CE0-4F2B-BEE3-20F1E5D4DEE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDA4A473-8CE0-4F2B-BEE3-20F1E5D4DEE2}.Release|x64.ActiveCfg = Release|Any CPU
+		{FDA4A473-8CE0-4F2B-BEE3-20F1E5D4DEE2}.Release|x64.Build.0 = Release|Any CPU
+		{FDA4A473-8CE0-4F2B-BEE3-20F1E5D4DEE2}.Release|x86.ActiveCfg = Release|Any CPU
+		{FDA4A473-8CE0-4F2B-BEE3-20F1E5D4DEE2}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{675D61EA-4B90-48DC-9C1D-0D3446451C1D} = {98B1519F-04AF-47EA-BF80-A9A97507DDC3}
 		{6F1AD1C2-9FA2-4635-AEDD-0BF066BE2EA5} = {675D61EA-4B90-48DC-9C1D-0D3446451C1D}
 		{4FB6B68F-10DB-4078-A786-57D3F2102C22} = {675D61EA-4B90-48DC-9C1D-0D3446451C1D}
+		{150CC3F0-C7E9-46FF-B866-77810AE9E3F8} = {98B1519F-04AF-47EA-BF80-A9A97507DDC3}
+		{FDA4A473-8CE0-4F2B-BEE3-20F1E5D4DEE2} = {150CC3F0-C7E9-46FF-B866-77810AE9E3F8}
 	EndGlobalSection
 EndGlobal
