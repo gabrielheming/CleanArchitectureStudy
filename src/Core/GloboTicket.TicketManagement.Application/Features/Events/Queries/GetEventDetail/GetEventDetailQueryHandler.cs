@@ -25,7 +25,7 @@ namespace GloboTicket.TicketManagement.Application.Features.Events.Queries.GetEv
 
         public async Task<EventDetailVm> Handle(GetEventDetailQuery request, CancellationToken cancellationToken)
         {
-            Event @event = await eventRepository.GetByIdAsync(request.Id);
+            Event @event = await eventRepository.GetByIdAsync(request.EventId);
             EventDetailVm eventDetailDto = mapper.Map<EventDetailVm>(@event);
 
             Category category = await categoryRepository.GetByIdAsync(eventDetailDto.CategoryId);
