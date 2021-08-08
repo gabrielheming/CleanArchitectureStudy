@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace GloboTicket.TickectManagement.Api
+namespace GloboTicket.TicketManagement.Api
 {
     public class Program
     {

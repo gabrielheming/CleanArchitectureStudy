@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace GloboTicket.TickectManagement.Api.Controllers
+namespace GloboTicket.TicketManagement.Api.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]

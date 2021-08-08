@@ -1,3 +1,4 @@
+using GloboTicket.TicketManagement.Api.Utility;
 using GloboTicket.TicketManagement.Application;
 using GloboTicket.TicketManagement.Infrastructure;
 using GloboTicket.TicketManagement.Persistence;
@@ -8,7 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 
-namespace GloboTicket.TickectManagement.Api
+namespace GloboTicket.TicketManagement.Api
 {
     public class Startup
     {
@@ -31,7 +32,9 @@ namespace GloboTicket.TickectManagement.Api
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "GloboTicket.TickectManagement.Api", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "GloboTicket.TicketManagement.Api", Version = "v1" });
+
+                c.OperationFilter<FileResultContentTypeOperationFilter>();
             });
 
             services.AddCors(options =>
@@ -47,7 +50,7 @@ namespace GloboTicket.TickectManagement.Api
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "GloboTicket.TickectManagement.Api v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "GloboTicket TicketManagement API"));
             }
 
             app.UseHttpsRedirection();

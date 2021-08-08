@@ -1,7 +1,7 @@
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
-namespace GloboTicket.TickectManagement.Api.Controllers
+namespace GloboTicket.TicketManagement.Api.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
