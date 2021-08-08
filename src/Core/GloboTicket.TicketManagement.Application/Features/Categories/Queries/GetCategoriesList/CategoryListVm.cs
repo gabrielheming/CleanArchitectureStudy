@@ -4,7 +4,7 @@ namespace GloboTicket.TicketManagement.Application.Features.Categories.Queries.G
 {
     public class CategoryListVm
     {
-        public Guid Id { get; set; }
+        public Guid CategoryId { get; set; }
         public string Name { get; set; }
     }
 }

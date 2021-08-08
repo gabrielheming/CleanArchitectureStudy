@@ -9,7 +9,7 @@ using MediatR;
 
 namespace GloboTicket.TicketManagement.Application.Features.Categories.Queries.GetCategoriesList
 {
-    public class GetCategoriesListQueryHandler : IRequestHandler<GetCategoriesListWithEventsQuery, List<CategoryListVm>>
+    public class GetCategoriesListQueryHandler : IRequestHandler<GetCategoriesListQuery, List<CategoryListVm>>
     {
         private readonly IMapper mapper;
         private readonly IAsyncRepository<Category> categoryRepository;
@@ -20,7 +20,7 @@ namespace GloboTicket.TicketManagement.Application.Features.Categories.Queries.G
             this.categoryRepository = categoryRepository;
         }
 
-        public async Task<List<CategoryListVm>> Handle(GetCategoriesListWithEventsQuery request, CancellationToken cancellationToken)
+        public async Task<List<CategoryListVm>> Handle(GetCategoriesListQuery request, CancellationToken cancellationToken)
         {
             IEnumerable<Category> allCategories = (await categoryRepository.ListAllAsync()).OrderBy(_ => _.Name);
             return mapper.Map<List<CategoryListVm>>(allCategories);
