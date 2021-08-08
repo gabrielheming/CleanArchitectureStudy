@@ -5,7 +5,7 @@ using Microsoft.Extensions.Options;
 using SendGrid;
 using SendGrid.Helpers.Mail;
 
-namespace GloboTicket.TicketManagement.Insfrastructure.Mail
+namespace GloboTicket.TicketManagement.Infrastructure.Mail
 {
     public class EmailService : IEmailService
     {

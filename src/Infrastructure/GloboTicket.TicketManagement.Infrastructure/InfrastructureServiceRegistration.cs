@@ -4,7 +4,7 @@ using GloboTicket.TicketManagement.Insfrastructure.Mail;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace GloboTicket.TicketManagement.Insfrastructure
+namespace GloboTicket.TicketManagement.Infrastructure
 {
     public static class InfrastructureServiceRegistration
     {
